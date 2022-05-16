@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../Card/Card'
 import style from '../Main/Main.module.css'
 
+
 const Main = ({movie}) => {
   return (
     <div className={style.main_container}>
