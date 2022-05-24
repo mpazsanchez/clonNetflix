@@ -6,7 +6,6 @@ import Footer from './Components/Footer/Footer';
 import { useState, useEffect } from 'react';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from './Components/Card/Card';
-import { CardGroup } from 'react-bootstrap';
 
 
 function App() {
@@ -33,11 +32,11 @@ function App() {
         <Header />
         <Main/>
 
-        <CardGroup>
+        <div className='cards'>
             {movie.map((movie) => (
             <Card key={movie.id} movie={movie}/>
             ))} 
-        </CardGroup>
+        </div>
 
         <Footer />
     </div>
